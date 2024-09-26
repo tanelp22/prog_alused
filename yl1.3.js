@@ -4,8 +4,9 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 rl.question(`Sisestage astme alus: `, astmeAlus=>{
-    let astendaja =4
-    let tulemus=astmeAlus**astendaja
-    console.log(tulemus)
-    rl.close()
+    rl.question("Sisestage astendaja: ",astendaja=>{
+        let tulemus=astmeAlus**astendaja
+        console.log(tulemus)
+        rl.close()
+    })
 })
