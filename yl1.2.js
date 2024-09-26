@@ -1,5 +1,5 @@
-aasta=2016
-president="Kersti Kaljulaid"
-lauseKeskosa=". aastal valiti Eesti presidendiks "
-lause=aasta+lauseKeskosa
-console.log(aasta)
+let aasta=2016
+let president="Kersti Kaljulaid"
+let lauseKeskosa=". aastal valiti Eesti presidendiks "
+let lause=aasta+lauseKeskosa+president
+console.log(lause)
