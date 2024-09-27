@@ -10,12 +10,12 @@ const rl = readline.createInterface({
 rl.question('Sisestage kirja suurus megabaitides: ', kirjaSuurus=>{
     rl.question("Sisesatage kirja Teema peakiri: ",  teemaPealkiri=>{
         rl.question('Kas kirjaga on kaasas Fail ("jah")/("ei"): ',  Fail=>{
-            if(teemaPealkiri.length ==0){
-                console.log("1")
+            if(teemaPealkiri.length ==0 || (Fail =="jah" && kirjaSuurus>1.0)){
+                console.log("Kiri on spamm.")
                 rl.close()
             } 
             else{
-                console.log("0")
+                console.log("Kiri ei ole spamm.")
                 rl.close()
             
             }
