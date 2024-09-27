@@ -20,10 +20,6 @@ rl.question(`Sisestage enda vanus: `, vanus=>{
                     optMin=Math.round(0.8*maxPulss)
                     optMax=Math.round(0.87*maxPulss)
                 }
-                else{
-                    console.log("Vale sisend. (Õige 1..3)")
-                    rl.close()
-                }  
 			    console.log("Pulsisagedus peaks olema vahemikus "+optMin+" kuni "+optMax+".")
                 rl.close()
             }
@@ -40,10 +36,6 @@ rl.question(`Sisestage enda vanus: `, vanus=>{
                 else if(treeninguTüüp==3){
                     optMin=Math.round(0.8*maxPulss)
                     optMax=Math.round(0.87*maxPulss)
-                }
-                else{
-                    console.log("Vale sisend. (Õige 1..3)")
-                    rl.close()
                 }  
 			    console.log("Pulsisagedus peaks olema vahemikus "+optMin+" kuni "+optMax+".")
                 rl.close()
