@@ -10,10 +10,17 @@ const rl = readline.createInterface({
 let saabounu=0;
 let KoikOunad=20;
 rl.question('Mitu pöialpoissi tahab õunu?: ', ounaSoojateArv=>{
-    for(let i=0;i<ounaSoojateArv;i++){
+    //for(let i=0;i<ounaSoojateArv;i++){
+    //    saabounu=randomInteger(1,2)
+    //    KoikOunad-=saabounu
+    //    console.log(saabounu)
+    //}
+    let i=0;
+    while(i<ounaSoojateArv){
         saabounu=randomInteger(1,2)
         KoikOunad-=saabounu
         console.log(saabounu)
+        i++
     }
     console.log("Lumivalgekesele jäi "+KoikOunad+" õuna.")
     rl.close()
